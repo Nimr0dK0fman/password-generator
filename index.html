@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="centre">Secure Password Generator</h1>
+    </header>
+
+    <main>
+        <section id="centre">
+            <article id="description-box">
+                <h2>I created a simple and secure password generator</h2>
+                <!-- <p>Using Javascript I wrote a script that randomizes 16 characters from all available keyboard
+                    characters on a normal keyboard. This script also uses lower and upper case characters to insure
+                    that there a lot to choose from.</p> -->
+                <p style="text-align: left">Empowered by JavaScript, I've crafted a dynamic script that generates secure
+                    passwords by randomly
+                    selecting 16 characters from the vast array of symbols found on a standard keyboard.</p>
+                <p style="text-align: left">This robust script ensures diversity by incorporating both lowercase and
+                    uppercase characters,
+                    providing a rich and varied selection for enhanced security.</p>
+            </article>
+            <article id="description-box">
+                <h2>Password generator</h2>
+                <button onclick="newPassword()" class="button-common">Click here to generate password</button>
+                <div id="password-container" style="display: none"></div>
+                <p id="password-display"></p>
+                <button id="copy-button" class="button-common" onclick="copyToClipboard()">Copy</button>
+                <div id="copy-message" class="copy-message"></div>
+                <button id="toggle-button" class="button-common" onclick="togglePassword()">Show/Hide Password</button>
+            </article>
+        </section>
+    </main>
+
+    <footer id="centre">
+        <p>&copy; 2023 Nim.K Projects</p>
+    </footer>
+    <script src="index.js"></script>
+
+</html>
